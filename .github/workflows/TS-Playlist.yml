@@ -75,8 +75,8 @@ jobs:
             git clone https://${{ github.event.inputs.git_token }}@github.com/${{ github.event.inputs.git_id }}/MyTataSky-Daily
             rm -rf MyTataSky-Daily/*
             rm -rf MyTataSky-Daily/.github
-            mv Sneh-TataSky/* MyTataSky-Daily/
-            mv Sneh-TataSky/.github MyTataSky-Daily/
+            mv sneh-tatasky/* MyTataSky-Daily/
+            mv sneh-tatasky/.github MyTataSky-Daily/
             cd MyTataSky-Daily/
             git add .
             git commit --author="TechieSneh<techiesneh@gmail.com>" -m "Update Repo"
