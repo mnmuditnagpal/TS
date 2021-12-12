@@ -53,9 +53,9 @@ jobs:
             dir="${gist_url##*/}"
             git clone https://gitlab.com/techiesneh/sneh-tatasky
             gh repo create MyTataSky-Daily --private -y || echo "New repo has been created"
-            mv ../TSlogin.exp Sneh-TataSky/code_samples/
-            chmod 755 Sneh-TataSky/code_samples/TSlogin.exp
-            cd Sneh-TataSky/
+            mv ../TSlogin.exp sneh-tatasky/code_samples/
+            chmod 755 sneh-tatasky/code_samples/TSlogin.exp
+            cd sneh-tatasky/
             mkdir .github
             cd .github
             mkdir workflows
